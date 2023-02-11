@@ -68,14 +68,14 @@ export default function App() {
         <h1>Fitness Club Registration</h1>
         <form onSubmit={handleSubmit}>
           <fieldset>
-
-            <input type="text" value={Name} placeholder="Enter Name" onChange={(e) => { setName(e.target.value) }}></input><br /><br />
-
-            <input type="text" value={Email} placeholder="Enter Email" onChange={(e) => setEmail(e.target.value)}></input><br /><br />
-
-            <input type="number" value={Phone} placeholder="Enter PhoneNumber" onChange={(e) => setPhone(e.target.value)}></input><br /><br />
-
-            <input type="text" value={Address} placeholder="Enter Address" onChange={(e) => setAddress(e.target.value)}></input><br /><br />
+            <label>Name :-</label><br />
+            <input type="text" value={Name} onChange={(e) => { setName(e.target.value) }}></input><br /><br />
+            <label>Email :-</label><br />
+            <input type="text" value={Email} onChange={(e) => setEmail(e.target.value)}></input><br /><br />
+            <label>PhoneNumber :-</label><br />
+            <input type="number" value={Phone} onChange={(e) => setPhone(e.target.value)}></input><br /><br />
+            <label>Address :-</label><br />
+            <input type="text" value={Address} onChange={(e) => setAddress(e.target.value)}></input><br /><br />
             <button>Add member</button>
           </fieldset>
         </form>
